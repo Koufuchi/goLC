@@ -17,22 +17,22 @@ func Test_removeNthFromEnd(t *testing.T) {
 		want *ll.ListNode
 	}{
 		{
-			name: "head = \"[1,2,3,4,5]\"",
+			name: "head = \"[1,2,3,4,5]\", n = 2",
 			args: args{head: ll.GenLinkedListFromInts([]int{1, 2, 3, 4, 5}), n: 2},
 			want: ll.GenLinkedListFromInts([]int{1, 2, 3, 5}),
 		},
 		{
-			name: "head = \"[1]\"",
+			name: "head = \"[1]\", n = 1",
 			args: args{head: ll.GenLinkedListFromInts([]int{1}), n: 1},
 			want: ll.GenLinkedListFromInts([]int{}),
 		},
 		{
-			name: "head = \"[1,2]\"",
+			name: "head = \"[1,2]\", n = 1",
 			args: args{head: ll.GenLinkedListFromInts([]int{1, 2}), n: 1},
 			want: ll.GenLinkedListFromInts([]int{1}),
 		},
 		{
-			name: "head = \"[1,2]\"",
+			name: "head = \"[1,2]\", n = 2",
 			args: args{head: ll.GenLinkedListFromInts([]int{1, 2}), n: 2},
 			want: ll.GenLinkedListFromInts([]int{2}),
 		},
